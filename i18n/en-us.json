@@ -78,7 +78,7 @@
     "bottom.table.button.changes.label": "Changes",
     "bottom.table.button.reset.label": "Reset",
     "bottom.page.game.version.hyperlink": "Stardew Valley v1.6.3",
-    "bottom.page.website.version.hyperlink": "Stardew Profits v1.6.7",
+    "bottom.page.website.version.hyperlink": "Stardew Profits v1.6.10",
 
 
     "top.page.title": "Stardew Profits",
@@ -143,6 +143,8 @@
     "table.page.field.farming-food-buff.description": "The consumable buff active on the player.",
     "table.page.field.show-extra-info": "Show Extra Info",
     "table.page.field.show-extra-info.description": "Selecting this will show additional detailed info about every crop on the tooltip.",
+    "table.page.field.disable-links": "Disable Links",
+    "table.page.field.disable-links.description": "Selecting this will disable opening the Official Wiki when the bar graph is clicked.",
 
     "table.graph.mouseover.totalProfit": "Total profit:",
     "table.graph.mouseover.profitDay": "Profit per day:",
@@ -154,6 +156,8 @@
     "table.graph.mouseover.fertilizerLossDay": "Fertilizer loss per day:",
     "table.graph.mouseover.produceSold": "Produce sold:",
     "table.graph.mouseover.rawCrops": "Raw crops",
+    "table.graph.moseover.quantitySold": "Quantity sold:",
+    "table.graph.mouseover.excessProduce": "Excess Produce:",
     "table.graph.mouseover.duration": "Duration:",
     "table.graph.mouseover.days": " days",
     "table.graph.mouseover.planted": "Planted:",
@@ -166,6 +170,7 @@
     "table.graph.mouseover.value": "Value",
     "table.graph.mouseover.valueJar": "Value (Jar):",
     "table.graph.mouseover.valueKeg": "Value (Keg):",
+    "table.graph.mouseover.valueDehydrator" : "Value (Dehydrator):",
     "table.graph.mouseover.valueSeeds": "Value (Seeds):",
     "table.graph.mouseover.seedsPierre": "Seeds (Pierre):",
     "table.graph.mouseover.seedsJoja": "Seeds (Joja):",

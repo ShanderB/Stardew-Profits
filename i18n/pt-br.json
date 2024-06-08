@@ -1,6 +1,6 @@
 {
-    "bottom.table.season.selector": "Estação:",
     "top.right.table.language.selector": "Linguagem:",
+    "bottom.table.season.selector": "Estação:",
     "season_0": "Primavera",
     "season_1": "Verão",
     "season_2": "Outono",
@@ -141,6 +141,8 @@
     "table.page.field.farming-food-buff.description": "O buff consumível ativo no jogador.",
     "table.page.field.show-extra-info": "Mostrar Informações Extras",
     "table.page.field.show-extra-info.description": "Selecionar isso mostrará informações detalhadas adicionais sobre cada cultura na dica de ferramenta.",
+    "table.page.field.disable-links": "Desabilitar links",
+    "table.page.field.disable-links.description": "Selecionar isso irá desabilitar abrir o Wiki oficial quando clicar na barra do gráfico.",
 
     "table.graph.mouseover.profit": "Lucro Total:",
     "table.graph.mouseover.totalProfit": "Lucro total:",
@@ -153,6 +155,8 @@
     "table.graph.mouseover.fertilizerLossDay": "Perda de fertilizante por dia:",
     "table.graph.mouseover.produceSold": "Produção vendida:",
     "table.graph.mouseover.rawCrops": "Culturas brutas",
+    "table.graph.moseover.quantitySold": "Quantidade vendira:",
+    "table.graph.mouseover.excessProduce": "Excesso produzido:",
     "table.graph.mouseover.duration": "Duração:",
     "table.graph.mouseover.days": " dias",
     "table.graph.mouseover.planted": "Plantado:",
@@ -165,6 +169,7 @@
     "table.graph.mouseover.value": "Valor",
     "table.graph.mouseover.valueJar": "Valor (Pote):",
     "table.graph.mouseover.valueKeg": "Valor (Barril):",
+    "table.graph.mouseover.valueDehydrator" : "Valor (Desidratador):",
     "table.graph.mouseover.valueSeeds": "Valor (Sementes):",
     "table.graph.mouseover.seedsPierre": "Sementes (Pierre):",
     "table.graph.mouseover.seedsJoja": "Sementes (Joja):",
