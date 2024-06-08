@@ -1017,14 +1017,11 @@ function renderGraph() {
 				tooltipTr = tooltipTable.append("tr");
 				tooltipTr.append("td").attr("class", "tooltipTdLeftSpace").text(selectedLanguageFile['table.graph.mouseover.produceSold']);
 				switch (options.produce) {
-<<<<<<< HEAD
-					case 0: tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.rawCrops']); break;
-=======
 					case 0: 
-						tooltipTr.append("td").attr("class", "tooltipTdRight").text("Raw crops"); 
+						tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.rawCrops']); 
 						
 						tooltipTr = tooltipTable.append("tr");
-						tooltipTr.append("td").attr("class", "tooltipTdRight").text("Quantity sold:");
+						tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.quantitySold']);
 
 						if(d.profitData.quantitySold > 0 ){
 							tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.profitData.quantitySold);
@@ -1032,68 +1029,58 @@ function renderGraph() {
 						else
 							tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text(d.profitData.quantitySold);
 						break;
->>>>>>> a56eac63daf9b0d3333225e265006cd0492ae149
 					case 1:
 						if (d.produce.jarType != null){
 							tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.produce.jarType);
-<<<<<<< HEAD
-						else if (options.sellRaw)
-                            tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text(selectedLanguageFile['table.graph.mouseover.rawCrops']);
-=======
 							tooltipTr = tooltipTable.append("tr");
-							tooltipTr.append("td").attr("class", "tooltipTdRight").text("Quantity sold:");
+							tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.quantitySold']);
 
                             if(d.profitData.quantitySold > 0 ){
                                 tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.profitData.quantitySold);
                                 tooltipTr = tooltipTable.append("tr");
-                                tooltipTr.append("td").attr("class", "tooltipTdRight").text("Excess Produce:");
+                                tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.excessProduce']);
                                 tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.profitData.excessProduce);
                             }
                             else
                                 tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text(d.profitData.quantitySold);
 						}
 						else if (options.sellRaw) {
-                            tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text("Raw crops");
+                            tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text(selectedLanguageFile['table.graph.mouseover.rawCrops']);
 							tooltipTr = tooltipTable.append("tr");
-							tooltipTr.append("td").attr("class", "tooltipTdRight").text("Quantity sold:");
+							tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.quantitySold']);
 							tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.profitData.quantitySold);
 						}
->>>>>>> a56eac63daf9b0d3333225e265006cd0492ae149
                         else
 							tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text(selectedLanguageFile['table.graph.mouseover.none']);
 						break;
 					case 2:
 						if (d.produce.kegType != null){
 							tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.produce.kegType);
-<<<<<<< HEAD
-                        else if (options.sellRaw)
-                            tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text(selectedLanguageFile['table.graph.mouseover.rawCrops']);
-=======
 							tooltipTr = tooltipTable.append("tr");
-							tooltipTr.append("td").attr("class", "tooltipTdRight").text("Quantity sold:");
+							tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.quantitySold']);
 
                             if(d.profitData.quantitySold > 0 ){
                                 tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.profitData.quantitySold);
                                 tooltipTr = tooltipTable.append("tr");
-                                tooltipTr.append("td").attr("class", "tooltipTdRight").text("Excess Produce:");
+                                tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.excessProduce']);
                                 tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.profitData.excessProduce);
                             }
                             else
                                 tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text(d.profitData.quantitySold);
 						}
                         else if (options.sellRaw) {
-                            tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text("Raw crops");
+                            tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text(selectedLanguageFile['table.graph.mouseover.rawCrops']);
 							tooltipTr = tooltipTable.append("tr");
-							tooltipTr.append("td").attr("class", "tooltipTdRight").text("Quantity sold:");
+							tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.quantitySold']);
 							tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.profitData.quantitySold);
 						}
 						else
-							tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text("None");
+							tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text(selectedLanguageFile['table.graph.mouseover.none']);
 						break;
 					case 3: 
 						tooltipTr.append("td").attr("class", "tooltipTdRight").text("Seeds"); 
 						tooltipTr = tooltipTable.append("tr");
-						tooltipTr.append("td").attr("class", "tooltipTdRight").text("Quantity sold:");
+						tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.quantitySold']);
 
 						if(d.profitData.quantitySold > 0 ){
 							tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.profitData.quantitySold);
@@ -1105,12 +1092,12 @@ function renderGraph() {
 						if (d.produce.dehydratorType != null){
 							tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.produce.dehydratorType);
 							tooltipTr = tooltipTable.append("tr");
-							tooltipTr.append("td").attr("class", "tooltipTdRight").text("Quantity sold:");
+							tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.quantitySold']);
 
 							if(d.profitData.quantitySold > 0 ){
 								tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.profitData.quantitySold);
 								tooltipTr = tooltipTable.append("tr");
-								tooltipTr.append("td").attr("class", "tooltipTdRight").text("Excess Produce:");
+								tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.excessProduce']);
 								tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.profitData.excessProduce);
 							}
 							else
@@ -1118,12 +1105,11 @@ function renderGraph() {
 							
 						}
 						else if (options.sellRaw){
-							tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text("Raw crops");
+							tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text(selectedLanguageFile['table.graph.mouseover.rawCrops']);
 							tooltipTr = tooltipTable.append("tr");
-							tooltipTr.append("td").attr("class", "tooltipTdRight").text("Quantity sold:");
+							tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.quantitySold']);
 							tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.profitData.quantitySold);
 						}
->>>>>>> a56eac63daf9b0d3333225e265006cd0492ae149
 						else
 							tooltipTr.append("td").attr("class", "tooltipTdRightNeg").text(selectedLanguageFile['table.graph.mouseover.none']);
 						break;
@@ -1185,13 +1171,8 @@ function renderGraph() {
                         }
 					}
 					tooltipTr = tooltipTable.append("tr");
-<<<<<<< HEAD
 					if (d.produce.jarType != null) {
 						tooltipTr.append("td").attr("class", "tooltipTdLeftSpace").text(selectedLanguageFile['table.graph.mouseover.value'] + " (" + d.produce.jarType + "):");
-=======
-					if (d.produce.jarType) {
-						tooltipTr.append("td").attr("class", "tooltipTdLeftSpace").text("Value (" + d.produce.jarType + "):");
->>>>>>> a56eac63daf9b0d3333225e265006cd0492ae149
 						tooltipTr.append("td").attr("class", "tooltipTdRight").text(d.produce.price * 2 + 50)
 						.append("div").attr("class", "gold");
 					}
@@ -1211,13 +1192,13 @@ function renderGraph() {
 					}
 					tooltipTr = tooltipTable.append("tr");
 					if (d.produce.dehydratorType) {
-						tooltipTr.append("td").attr("class", "tooltipTdLeft").text("Value (" + d.produce.dehydratorType + "):");
+						tooltipTr.append("td").attr("class", "tooltipTdLeft").text(selectedLanguageFile['table.graph.mouseover.value'] + " (" + d.produce.dehydratorType + "):");
 						tooltipTr.append("td").attr("class", "tooltipTdRight").text(dehydratorModifierByCrop)
 						.append("div").attr("class", "gold");
 					}
 					else {
-						tooltipTr.append("td").attr("class", "tooltipTdLeft").text("Value (Dehydrator):");
-						tooltipTr.append("td").attr("class", "tooltipTdRight").text("None");
+						tooltipTr.append("td").attr("class", "tooltipTdLeft").text(selectedLanguageFile['table.graph.mouseover.valueDehydrator']);
+						tooltipTr.append("td").attr("class", "tooltipTdRight").text(selectedLanguageFile['table.graph.mouseover.none']);
 					}
                     tooltipTr = tooltipTable.append("tr");
                     tooltipTr.append("td").attr("class", "tooltipTdLeft").text(selectedLanguageFile['table.graph.mouseover.valueSeeds']);
