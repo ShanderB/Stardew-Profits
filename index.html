@@ -86,7 +86,7 @@
 						<option id="bottom.table.select_produce.jar.selection" value="1"></option>
 						<option id="bottom.table.select_produce.keg.selection" value="2"></option>
                         <option id="bottom.table.select_produce.seeds.selection" value="3"></option>
-						<option value="4">Dehydrator</option>
+						<option id="bottom.table.select_produce.dehydrator.selection" value="4"></option>
 					</select>
 				</td>
 			</tr>
@@ -95,23 +95,31 @@
                 <td colspan="2" class="sub">
                     <table cellspacing="2" class="subt">
                         <tr id="tr_equipment">
-                            <td>Equipment:</td>
+                            <td id="bottom.table.equipment.field"></td>
                             <td><input type="number" id="equipment" value="0" onChange="refresh()"/></td>
                         </tr>
                         <tr id="tr_check_sellRaw">
-                            <td>No Artisan Good:</td>
-                            <td><input type="checkbox" id="check_sellRaw" onChange="refresh()"/> Sell Raw<br /></td>
+                            <td id="bottom.table.noArtisanGood.field"></td>
+                            <td>
+								<input type="checkbox" id="check_sellRaw" onChange="refresh()"/>
+								<span id="bottom.table.non-existent.toggle"></span>
+								<br/>
+							</td>
                         </tr>
                         <tr id="tr_check_sellExcess">
-                            <td>Excess:</td>
-                            <td><input type="checkbox" id="check_sellExcess" onChange="refresh()"/> Sell Raw<br /></td>
+                            <td id="bottom.table.excess.field"></td>
+                            <td>
+								<input type="checkbox" id="check_sellExcess" onChange="refresh()"/>
+								<span id="bottom.table.non-existent.toggle"></span>
+								<br />
+							</td>
                         </tr>
                         <tr id="tr_check_byHarvest">
-                            <td>By Harvest:</td>
+                            <td id="bottom.table.byHarvest.field"></td>
                             <td><input type="checkbox" id="check_byHarvest" onChange="refresh()"/><br /></td>
                         </tr>
                         <tr id="tr_select_aging">
-                            <td>Aging:</td>
+                            <td id="bottom.table.aging.selector"></td>
                             <td >
                                 <select id="select_aging" onChange="refresh()">
                                     <option id="bottom.table.aging.none.selection" value="0" selected="true"></option>
@@ -287,8 +295,6 @@
 			</tr>
 
 			<tr>
-<!--TODO arrumar esse css quebrado 				 -->
-
 				<td colspan="3" id="tdhelp">
 					<div id="divhelp">
 						<a id="bottom.table.button.help.label" href="help.html"></a>

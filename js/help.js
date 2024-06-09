@@ -20,13 +20,10 @@ function setLanguage(){
 		});
 }
 
-//TODO Move to the top of the code.
 (function init() {
   fetch('i18n/language-list.json')
   .then(response => response.json())
   .then(data => {
-	//TODO This function get the current language file and fill all the fields.
-	//TODO This should be usefull if we intend to add the langue to URL.
 	 var select = document.getElementById('select_language');
 
     select.innerHTML = '';
@@ -39,7 +36,6 @@ function setLanguage(){
       select.appendChild(option);
     }
 
-	//TODO document.body.style.display = "block";
 	setLanguage();
   })
 })()
